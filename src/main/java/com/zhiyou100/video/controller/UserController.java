@@ -35,7 +35,6 @@ public class UserController {
 	UserService us;
 	
     
-    
     @RequestMapping(value="/front/user/login.action")
     @ResponseBody
     public User userLogin(User u,Model md,HttpSession session) {
