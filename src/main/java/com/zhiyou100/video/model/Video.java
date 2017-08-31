@@ -29,7 +29,7 @@ public class Video {
 	  
 	private   String  CName; 
 	  
-	private   Integer   Average;
+	private   Integer  Average;
 	  
     
 	

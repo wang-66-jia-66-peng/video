@@ -50,7 +50,7 @@
 									<span class="count" title="观看次数">
 									<img src="${pageContext.request.contextPath }/static/img/count.png" alt="">${video.videoPlayTimes }</span>
 									<span class="duration" title="视频时长">
-										<img src="${pageContext.request.contextPath }static/img/player.png" alt="">${video.videoLength }</span>
+										<img src="${pageContext.request.contextPath }/static/img/player.png" alt="">${video.CName }</span>
 								</div>
 							</li>
 						</c:forEach>

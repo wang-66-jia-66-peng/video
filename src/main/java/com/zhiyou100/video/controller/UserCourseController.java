@@ -29,6 +29,26 @@ public class UserCourseController {
 		List<Course>  co  =  ucs.findAllCourseAndVideo(subjectId);
 	
 		System.out.println(co);
+		for (Course course : co) {
+			List<Video> videoList = course.getVideoList();
+			for (Video video : videoList) {
+				Integer videoLength = video.getVideoLength();
+				     int hh = videoLength/60/60;
+				     int m = videoLength/60;
+				     String mm=""+m;
+				     if (m<10) {
+						mm="0"+m;
+					}
+				     int s = videoLength%60;
+				     String ss=""+s;
+				     if (s<10) {
+						ss="0"+s;
+					}
+				    System.out.println(hh+"----"+mm+"---"+ss);
+				  video.setCName("0"+hh+":"+mm+":"+ss);
+			}
+		}
+		
 		md.addAttribute("courses", co);
 		
 		return "/front/course/index";
