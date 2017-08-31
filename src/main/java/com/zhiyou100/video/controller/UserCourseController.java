@@ -37,8 +37,6 @@ public class UserCourseController {
 	
 	@RequestMapping("/front/video/index.action")
     public String courseVideo(Integer videoId ,Integer subjectId, Model md){
-		
-    	
     	
     	Subject  subject = ucs.findSubjectById(subjectId);
 		
