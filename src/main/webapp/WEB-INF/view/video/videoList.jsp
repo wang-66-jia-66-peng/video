@@ -165,14 +165,14 @@ function urlSubmit(){
   			        	<input type="text"    name="videoKeyWord"  value=""   placeholder="请输入搜索关键词"/>
   			        	 &nbsp;&nbsp;&nbsp;
   			             <select name="videoSearchSpeaker"      >
-  			        		<option value="">选择主讲人</option>
+  			        		<option value="0">选择主讲人</option>
   			        		<c:forEach items="${speaker }" var="speaker">
   			        		  <option value="${speaker.id }"  <%--  ${videoSearchSpeaker == speaker.id ? "selected":""} --%> >${speaker.speakerName}</option>
   			        		</c:forEach>
   			        	 </select>
   			        	&nbsp;&nbsp;&nbsp;
   			        	<select name="videoSearchCourse"    >
-  			        	<option value="">选择课程</option>
+  			        	<option value="0">选择课程</option>
   			        	<c:forEach  items="${course }" var="course">
   			        	    <option value="${course.id }" <%--  ${   ?"selected":""} --%>>${course.courseName }</option>
   			        	</c:forEach>

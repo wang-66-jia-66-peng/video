@@ -25,15 +25,16 @@ public class VideoController {
 	 VideoService vs ;
      
      @RequestMapping("/video/videoList.action")
-     public String  videoList(@RequestParam(defaultValue="")String videoKeyWord,@RequestParam(defaultValue="")Integer  videoSearchSpeaker ,
-    		 @RequestParam(defaultValue="")Integer videoSearchCourse,
+     public String  videoList(@RequestParam(defaultValue="")String videoKeyWord,
+    		 @RequestParam(defaultValue="0")Integer  videoSearchSpeaker ,
+    		 @RequestParam(defaultValue="0")Integer videoSearchCourse,
     		 @RequestParam(value="page",required=false,defaultValue="1")Integer currentPage,HttpServletResponse res,HttpServletRequest req, Model md) {
     	 
-    	 if (videoKeyWord==null || videoSearchSpeaker ==null || videoSearchCourse==null) {
+    	/* if (videoKeyWord==null || videoSearchSpeaker ==null || videoSearchCourse==null) {
     		 videoKeyWord="";
     		 videoSearchSpeaker=null;
     		 videoSearchCourse=null;
- 		 }
+ 		 }*/
      	 
          md.addAttribute("roleKeyword", videoKeyWord);
   	     md.addAttribute("videoSearchSpeaker", videoSearchSpeaker);

@@ -340,10 +340,10 @@
    
    v.course_id = c.id
    <where>
-    <if test="videoSearchSpeaker != null and videoSearchSpeaker !=''">
+    <if test="videoSearchSpeaker != null and videoSearchSpeaker !='' and videoSearchSpeaker != 0 ">
    and   speaker_id = ${videoSearchSpeaker}  
     </if>
-    <if test="videoSearchCourse !=null and videoSearchCourse !=''">
+    <if test="videoSearchCourse !=null and videoSearchCourse !='' and videoSearchCourse != 0 ">
    and  course_id = ${videoSearchCourse}
    </if>
    <if test="videoKeyWord !=null and videoKeyWord != ''">
