@@ -26,7 +26,7 @@ public class CustomInterceptor implements HandlerInterceptor {
    
 	@Override
 	public boolean preHandle(HttpServletRequest req, HttpServletResponse res, Object obj) throws Exception {
-		 // System.out.println("controller执行前调用,参数为req , res , controller的对象.只有返回true才能继续,用来做用户登录验证与权限校验");
+		 System.out.println("controller执行前调用,参数为req , res , controller的对象.只有返回true才能继续,用来做用户登录验证与权限校验");
 		  
 		/* @SuppressWarnings("unchecked")
 		List<Role> role = (List<Role>) req.getSession().getAttribute("ROLE");
