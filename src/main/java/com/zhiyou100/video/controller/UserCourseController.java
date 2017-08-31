@@ -28,7 +28,6 @@ public class UserCourseController {
 		
 		List<Course>  co  =  ucs.findAllCourseAndVideo(subjectId);
 	
-		System.out.println(co);
 		for (Course course : co) {
 			List<Video> videoList = course.getVideoList();
 			for (Video video : videoList) {
@@ -44,7 +43,6 @@ public class UserCourseController {
 				     if (s<10) {
 						ss="0"+s;
 					}
-				    System.out.println(hh+"----"+mm+"---"+ss);
 				  video.setCName("0"+hh+":"+mm+":"+ss);
 			}
 		}
@@ -78,7 +76,22 @@ public class UserCourseController {
     	  md.addAttribute("speaker", sp);
     	  
     	  List<Video> list= ucs.findVideoAllandSpeakerNameById(speakerId);
-    	   System.out.println(list);
+    	   for (Video video : list) {
+    		   Integer videoLength = video.getVideoLength();
+			     int hh = videoLength/60/60;
+			     int m = videoLength/60;
+			     String mm=""+m;
+			     if (m<10) {
+					mm="0"+m;
+				}
+			     int s = videoLength%60;
+			     String ss=""+s;
+			     if (s<10) {
+					ss="0"+s;
+				}
+			  video.setCName("0"+hh+":"+mm+":"+ss);
+		}
+    	  
     	 md.addAttribute("videoList", list);
     	  return "/front/video/content";
     }

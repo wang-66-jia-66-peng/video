@@ -48,7 +48,7 @@
 				<p class="lecturer">讲师：${video.SName}</p>
 				<div class="v-info">
 					<span class="count"><img src="${pageContext.request.contextPath}/static/img/count.png" alt="">${video.videoPlayTimes}</span>
-					<span class="duration"><img src="${pageContext.request.contextPath}/static/img/player.png" alt="">${video.videoLength}</span>
+					<span class="duration"><img src="${pageContext.request.contextPath}/static/img/player.png" alt="">${video.CName}</span>
 				</div>
 			</div>
 		</c:forEach>
