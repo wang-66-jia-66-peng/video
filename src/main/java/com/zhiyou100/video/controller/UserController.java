@@ -33,7 +33,8 @@ import com.zhiyou100.video.util.MailUtil;
 public class UserController {
     @Autowired
 	UserService us;
-	
+    
+    
     
     @RequestMapping(value="/front/user/login.action")
     @ResponseBody
