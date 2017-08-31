@@ -152,7 +152,7 @@ function urlSubmit(){
             <div>
             	 <label for="inputEmail3" class="col-sm-2 control-label"></label>
             	
-				    <a class="btn btn-primary" href="${pageContext.request.contextPath }/video/addVideo01.action">添加用户</a>
+				    <a class="btn btn-primary" href="${pageContext.request.contextPath }/video/addVideo01.action">添加视频</a>
 				   
 				    <button class="btn btn-primary" type="button"   onclick="pl()"  >批量删除 
   					 <span class="badge">0</span>

@@ -40,7 +40,7 @@
           <a href="${pageContext.request.contextPath }/course/courseList.action" onclick="">课程管理</a>
         </li>
         <li>
-          <a href="" onclick="">统计分析</a>
+          <a href="${pageContext.request.contextPath }/statistics/statisticsList.action" onclick="">统计分析</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

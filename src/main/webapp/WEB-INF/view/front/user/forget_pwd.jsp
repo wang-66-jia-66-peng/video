@@ -31,7 +31,7 @@
                         <span>通过注册邮箱重设密码</span>
                     </div>
                     <div class="form_back">
-                        <a href="index.do">返回立即登录</a>
+                        <a href="${pageContext.request.contextPath}//front/user/souye.action">返回立即登录</a>
                     </div>
                 </div>
                 <div class="form_body">
@@ -61,6 +61,8 @@
 						alert('验证码发送失败');
 					}
 				},'text');
+			}else{
+				alert("邮箱信息不能为空!!!");
 			}
 		}
     </script>

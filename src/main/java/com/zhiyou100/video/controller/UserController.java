@@ -88,7 +88,6 @@ public class UserController {
     	Date parse = sim.parse(birthdayStr);
         u.setBirthday(parse);
     	 us.userProfile(u);
-    	
     	return "redirect:/front/user/userIndex.action";
     }
     
@@ -203,7 +202,6 @@ public class UserController {
     @RequestMapping("/front/user/logout.action")
     public String logout(HttpSession session){
     	session.removeAttribute("_front_user");
-    	
     	return "redirect:/front/index.jsp";
     }
     

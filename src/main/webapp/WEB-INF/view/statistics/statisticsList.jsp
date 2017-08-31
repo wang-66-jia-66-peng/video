@@ -37,12 +37,12 @@
           <a href="${pageContext.request.contextPath }/course/courseList.action" onclick="">课程管理</a>
         </li>
         <li  class="active">
-          <a href="" onclick="">统计分析</a>
+          <a href="${pageContext.request.contextPath }/statistics/statisticsList.action" onclick="">统计分析</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <!-- <li><a href="http://mb.bootcss.com" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'themes'])" target="_blank">主题/模板</a></li> -->
-        <li><a href="" onclick=""  class="glyphicon glyphicon-log-out">用户名</a></li>
+        <li><a href="" onclick=""  class="glyphicon glyphicon-log-out">${ADMIN.loginName }</a></li>
       </ul>
     </nav>
   </div>
@@ -120,4 +120,6 @@
             }
         );
     </script>
+    
 </body>
+</html>
